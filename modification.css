@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Manrope;
+    color:  #2E2A26;
+
+}
+h1, h2, h3, h4, h5, h6{
+font-family: Cormorant Garamond ;
+padding: 8px;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    text-decoration: none;
+    padding: 8px;
+    margin: 8px;
+}
+.primary{
+background-color: #2E2A26;
+color: #D8935C;
+border-radius: 8px;
+}
+.secondary{
+    border: 2px solid #2E2A26;
+    border-radius: 8px;
+}
+h2{
+    font-size: 24px;
+}
+
