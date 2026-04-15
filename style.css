@@ -271,10 +271,12 @@ footer {
 
 .temoignages {
     text-align: center;
-    padding: 24px 16px;
+    padding-bottom: 24px;
     color: #2E2A26;
 }
-
+.temoignages h2{
+    padding-bottom: 24px;
+}
 .slider-wrapper {
     display: flex;
     align-items: center;
@@ -385,7 +387,7 @@ footer {
     flex-direction: row;
     list-style: none;
     gap: 24px;
-    padding: 16px 16px 16px 0px;
+    padding: 32px 16px 16px 0px;
 }
 
 
