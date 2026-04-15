@@ -85,6 +85,10 @@ header section .principal ul {
     list-style: none;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 main section {
     display: flex;
@@ -158,12 +162,126 @@ main #promesses .text a {
 }
 
 
-#prestations{
+#prestations {
     background-color: white;
     display: flex;
     flex-direction: column;
 }
-#prestations div{
+
+#prestations h2 {
+    padding: 16px;
+}
+
+#prestations div {
     display: flex;
     flex-direction: row;
+    width: 100%;
+}
+
+#prestations div article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
+}
+
+#prestations img {
+    width: 30vw;
+    border-radius: 8px;
+}
+
+#projet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 1px 1px 9px 0px #2e2a26ab;
+    z-index: 1;
+}
+
+#projet h2 {
+    padding: 16px;
+}
+
+#projet article {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+
+}
+
+#projet article div {
+    width: 50%;
+}
+
+#projet article h3 {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#projet article p {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#projet .black h3 {
+    color: #D8935C;
+}
+
+#projet .black p {
+    color: #D8935C;
+}
+
+.black {
+    background-color: #2E2A26;
+}
+
+#projet img {
+    width: 80%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.temoignages {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 24px;
+    
+    overflow-x: scroll;
+
+}
+
+.temoignages .slider {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.temoignages .slider .panel {
+    padding: 16px 24px;
+    border: 2px solid #D8935C;
+    border-radius: 8px;
+}
+
+.temoignages .slider .panel .text {
+    color: #2E2A26;
+    font-size: 16px;
+
 }
