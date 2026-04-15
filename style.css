@@ -169,7 +169,13 @@ main #promesses .text a {
 }
 
 #prestations h2 {
-    padding: 16px;
+     padding: 16px 0px;
+    background-color: #2E2A26;
+    width: 100%;
+    color: #D8935C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #prestations div {
@@ -201,13 +207,20 @@ main #promesses .text a {
 }
 
 #projet h2 {
-    padding: 16px;
+    background-color: #2E2A26;
+    width: 100%;
+    padding: 16px 0px;
+    color: #D8935C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #projet article {
     display: flex;
     flex-direction: row;
     padding: 16px;
+    box-shadow: 0px 1px 8px 0px #00000063;
 
 }
 
@@ -250,38 +263,161 @@ main #promesses .text a {
 #projet img {
     width: 80%;
 }
-footer{
+
+footer {
     display: flex;
     flex-direction: column;
 }
 
 .temoignages {
-    display: grid;
-    grid-auto-flow: column;
+    text-align: center;
+    padding: 24px 16px;
+    color: #2E2A26;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    grid-gap: 24px;
-    
-    overflow-x: scroll;
+    gap: 16px;
+
 
 }
 
-.temoignages .slider {
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 80%;
+
+}
+
+.panel {
     display: flex;
     flex-direction: column;
-    padding: 24px;
-    overflow: hidden;
-    position: relative;
-
-}
-
-.temoignages .slider .panel {
-    padding: 16px 24px;
+    align-items: center;
     border: 2px solid #D8935C;
-    border-radius: 8px;
+    border-radius: 16px;
+    padding: 24px;
+    background-color: white;
+    text-align: left;
+    scroll-snap-align: center;
+    width: 30%;
+    height: 40vh;
+    background-color: #D8935C;
+    border: 1px solid #2E2A26;
+
 }
 
-.temoignages .slider .panel .text {
-    color: #2E2A26;
-    font-size: 16px;
+.text-content {
+    font-style: italic;
 
+    padding: 8px;
+}
+
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid #2E2A26;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: bold;
+    display: block;
+}
+
+.nav-btn {
+    background: #D8935C;
+    border: none;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+    border: 1px solid #2E2A26;
+}
+
+.nav-btn:hover {
+    background: #D8935C;
+    color: white;
+}
+
+
+
+.contact {
+    background-color: #D8935C;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-shadow: 0px 2px 9px #2e2a26c9;
+}
+
+.contact .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    
+}
+
+.contact .left ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 24px;
+    padding: 16px 16px 16px 0px;
+}
+
+
+.contact .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 8px;
+}
+.contact .right fieldset{
+    width: 80%;
+    border: none;
+}
+
+.contact .right fieldset form{
+    display: flex;
+    flex-direction: column;
+}
+.contact .right fieldset form div{
+    padding: 4px;
+    
+
+}
+
+.contact .right fieldset form div label, input{
+    color: #2E2A26;
+    width: 100%;
+}
+#envoyer{
+    background-color: #2E2A26;
+    color: #D8935C;
+    font-size: 16px;
 }
