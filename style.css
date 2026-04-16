@@ -366,7 +366,7 @@ footer {
 
 
 
-.contact {
+#contact {
     background-color: #D8935C;
     display: flex;
     flex-direction: row;
@@ -374,7 +374,7 @@ footer {
     box-shadow: 0px 2px 9px #2e2a26c9;
 }
 
-.contact .left {
+#contact .left {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -382,7 +382,7 @@ footer {
     
 }
 
-.contact .left ul{
+#contact .left ul{
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -391,7 +391,7 @@ footer {
 }
 
 
-.contact .right {
+#contact .right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -399,22 +399,22 @@ footer {
     width: 50%;
     padding: 8px;
 }
-.contact .right fieldset{
+#contact .right fieldset{
     width: 80%;
     border: none;
 }
 
-.contact .right fieldset form{
+#contact .right fieldset form{
     display: flex;
     flex-direction: column;
 }
-.contact .right fieldset form div{
+#contact .right fieldset form div{
     padding: 4px;
     
 
 }
 
-.contact .right fieldset form div label, input{
+#contact .right fieldset form div label, input{
     color: #2E2A26;
     width: 100%;
 }
@@ -422,4 +422,5 @@ footer {
     background-color: #2E2A26;
     color: #D8935C;
     font-size: 16px;
+    border: none;
 }
